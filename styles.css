@@ -57,6 +57,7 @@ button:hover {
 }
 
 #animated-box {
+    position: relative;
     width: 120px;
     height: 120px;
     border-radius: 5px;
@@ -64,7 +65,17 @@ button:hover {
     margin: 20px auto;
     opacity: 0;
     transition: opacity 1s, transform 1s;
+    animation: animationthird 2s infinite alternate;
 }
+
+@keyframes animationthird {
+    0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
 @keyframes animationsecond {
     from {background: rgb(206, 104, 86);}
     to {background: rgb(112, 94, 218);}
