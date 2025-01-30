@@ -13,9 +13,20 @@ body {
     animation: changeBg 5s infinite alternate;
 }
 
+.banner-second {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    padding: 50px;
+    color: white;
+    font-size: 24px;
+    animation: animationsecond 2s infinite alternate;
+}
+
 @keyframes changeBg {
     0% {
         background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    }
+    50%{
+        background: linear-gradient(90deg, #83d437, #0c57da);
     }
     100% {
         background: linear-gradient(90deg, #6a11cb, #2575fc);
@@ -23,13 +34,13 @@ body {
 }
 
 .content {
-    display: grid;
     margin-top: 50px;
+    gap: 20px;
     flex-direction: column;
     align-items: center;
 }
-
 button {
+    width: 200px;
     padding: 10px 20px;
     font-size: 18px;
     border: none;
@@ -38,16 +49,23 @@ button {
     cursor: pointer;
     transition: transform 0.3s;
 }
-
+.disanimate-btn {
+    background-color: rgb(255, 0, 0);
+}
 button:hover {
     transform: scale(1.1);
 }
 
 #animated-box {
-    width: 100px;
-    height: 100px;
-    background-color: red;
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    background-color: rgb(30, 255, 0);
     margin: 20px auto;
     opacity: 0;
     transition: opacity 1s, transform 1s;
 }
+@keyframes animationsecond {
+    from {background: rgb(206, 104, 86);}
+    to {background: rgb(112, 94, 218);}
+  }
