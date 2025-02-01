@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map of Poland</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="map-container">
+        <!-- Interactive map will be generated here -->
+    </div>
+    <div id="info-box">
+        <!-- Information about regions will be displayed here -->
+    </div>
+    <div id="map-container">
+        <!-- Регион 1: Мазовецкое воеводство -->
+        <div class="region" data-name="Mazowieckie">
+            <img src="mazowieckie-coat-of-arms.jpg" alt="Герб Мазовецкого воеводства">
+        </div>
+        
+        <!-- Регион 2: Малопольское воеводство -->
+        <div class="region" data-name="Malopolskie">
+            <img src="malopolskie-coat-of-arms.jpg" alt="Герб Малопольского воеводства">
+        </div>
+        
+        <!-- Регион 3: Великопольское воеводство -->
+        <div class="region" data-name="Wielkopolskie">
+            <img src="wielkopolskie-coat-of-arms.jpg" alt="Герб Великопольского воеводства">
+        </div>
+    </div>
+    
+    <div id="info-box">
+        <h2 id="region-name"></h2>
+        <p><strong>Главный город:</strong> <span id="capital"></span></p>
+        <p><strong>Население:</strong> <span id="population"></span></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
